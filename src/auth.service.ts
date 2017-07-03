@@ -144,8 +144,11 @@ export class AuthService {
         let currentUser = this.gauth.currentUser.get();
         let profile = currentUser.getBasicProfile();
         let idToken = currentUser.getAuthResponse().id_token;
+        let accessToken = currentUser.getAuthResponse().id_token;
+        
         return {
-            token: idToken,
+            token: accessToken,
+            idToken: idToken,
             uid: profile.getId(),
             name: profile.getName(),
             email: profile.getEmail(),
