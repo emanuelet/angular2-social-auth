@@ -1,6 +1,6 @@
 {
     "name": "angular2-social-auth",
-    "version": "3.0.2",
+    "version": "3.0.3",
     "description": "Simple client side social authentication with providers for Google, Facebook and Linkedin for Angular2 application.",
     "main": "dist/bundles/angular2-social-login.min.js",
     "module": "dist/index.js",
@@ -38,8 +38,7 @@
         "angular4 social auth",
         "angular2 social auth"
     ],
-    "contributors": [
-        {
+    "contributors": [{
             "name": "Srinivas K",
             "email": "kpsrinivas@heresy.in"
         },
@@ -50,10 +49,11 @@
         },
         {
             "name": "Manoel Motoso",
-            "url": "",
+            "url": "https://github.com/manoelsmotoso",
             "email": "manoel.s.motoso@gmail.com"
         }
     ],
-    "author": "Heresy Infotech Private Limited",
-    "license": "ISC"
+    "author": "Heresy Infotech Private Limited and Manoel S. Motoso",
+    "license": "ISC",
+    "repository": "https://github.com/manoelsmotoso/angular2-social-auth.git"
 }
