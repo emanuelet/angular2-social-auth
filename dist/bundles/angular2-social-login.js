@@ -4,12 +4,6 @@
 	(factory((global.ng = global.ng || {}, global.ng.angular2SocialLogin = global.ng.angular2SocialLogin || {}),global.ng.core,global.Rx));
 }(this, (function (exports,_angular_core,rxjs_Observable) { 'use strict';
 
-var __decorate$1 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 var AuthService = (function () {
     function AuthService() {
     }
@@ -149,18 +143,14 @@ var AuthService = (function () {
             provider: "google"
         };
     };
-    AuthService = __decorate$1([
-        _angular_core.Injectable()
-    ], AuthService);
+    AuthService.decorators = [
+        { type: _angular_core.Injectable },
+    ];
+    /** @nocollapse */
+    AuthService.ctorParameters = function () { return []; };
     return AuthService;
 }());
 
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 var Angular2SocialLoginModule = (function () {
     function Angular2SocialLoginModule() {
     }
@@ -211,11 +201,13 @@ var Angular2SocialLoginModule = (function () {
             loadProvidersScripts[provider](config[provider]);
         });
     };
-    Angular2SocialLoginModule = __decorate([
-        _angular_core.NgModule({
-            providers: [AuthService]
-        })
-    ], Angular2SocialLoginModule);
+    Angular2SocialLoginModule.decorators = [
+        { type: _angular_core.NgModule, args: [{
+                    providers: [AuthService]
+                },] },
+    ];
+    /** @nocollapse */
+    Angular2SocialLoginModule.ctorParameters = function () { return []; };
     return Angular2SocialLoginModule;
 }());
 

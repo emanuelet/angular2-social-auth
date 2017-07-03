@@ -13,32 +13,33 @@
     },
     "peerDependencies": {
         "@angular/core": "2.x || 4.x",
-        "rxjs": "^5.0.1"
+        "rxjs": "^5.4.1"
     },
     "devDependencies": {
-        "@angular/common": "~2.4.0",
-        "@angular/compiler": "~2.4.0",
-        "@angular/compiler-cli": "~2.4.0",
-        "@angular/platform-browser": "~2.4.0",
-        "@types/core-js": "^0.9.34",
-        "rollup": "^0.41.6",
-        "rxjs": "5.0.1",
-        "typescript": "^2.2.2",
-        "uglify-js": "^2.8.22",
-        "zone.js": "^0.7.4",
-        "@angular/core": "~2.4.0",
-        "@angular/http": "~2.4.0"
+        "@angular/common": "^4.2.5",
+        "@angular/compiler": "^4.2.5",
+        "@angular/compiler-cli": "^4.2.5",
+        "@angular/core": "^4.2.5",
+        "@angular/http": "^4.2.5",
+        "@angular/platform-browser": "^4.2.5",
+        "@types/core-js": "^0.9.42",
+        "rollup": "^0.43.0",
+        "rxjs": "^5.4.1",
+        "typescript": "^2.4.1",
+        "uglify-js": "^3.0.23",
+        "zone.js": "^0.8.12"
     },
     "keywords": [
         "angular2",
         "angular",
         "angular 4",
         "authentication",
-        "social login",
-        "angular4 social login",
-        "angular2 social login"
+        "social auth",
+        "angular4 social auth",
+        "angular2 social auth"
     ],
-    "contributors": [{
+    "contributors": [
+        {
             "name": "Srinivas K",
             "email": "kpsrinivas@heresy.in"
         },

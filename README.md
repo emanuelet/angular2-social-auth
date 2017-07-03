@@ -1,5 +1,5 @@
 # angular2-social-auth
-Simple client side social authentication for Angular2 application based on our previous angular1's angularjs-social-login plugin.
+Simple client side social authentication for Angular 2.x | 4.x application.
 <br>
 this module is a fork of: https://github.com/heresy/angular2-social-login.git
 
