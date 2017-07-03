@@ -53,7 +53,8 @@ export class AuthService {
                                                         uid: res.id, 
                                                         provider: "facebook", 
                                                         image: res.picture.data.url,
-                                                        token: response.authResponse.accessToken
+                                                        token: response.authResponse.accessToken,
+                                                        idToken: '',
                                                     }
                                                     localStorage.setItem('_login_provider', 'facebook');
                                                     observer.next(userDetails);
@@ -73,8 +74,9 @@ export class AuthService {
                                                                 email: res.email, 
                                                                 uid: res.id, 
                                                                 provider: "facebook", 
-                                                                image: res.picture.data.url,
-                                                                token: response.authResponse.accessToken
+                                                                image: res.picture.data.url,                                                   
+                                                                token: response.authResponse.accessToken,
+                                                                idToken: '',
                                                             }
                                                             localStorage.setItem('_login_provider', 'facebook');
                                                             observer.next(userDetails);
@@ -144,7 +146,7 @@ export class AuthService {
         let currentUser = this.gauth.currentUser.get();
         let profile = currentUser.getBasicProfile();
         let idToken = currentUser.getAuthResponse().id_token;
-        let accessToken = currentUser.getAuthResponse().id_token;
+        let accessToken = currentUser.getAuthResponse().access_token;
         
         return {
             token: accessToken,

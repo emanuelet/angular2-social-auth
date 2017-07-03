@@ -44,7 +44,8 @@ var AuthService = (function () {
                                         uid: res.id,
                                         provider: "facebook",
                                         image: res.picture.data.url,
-                                        token: response.authResponse.accessToken
+                                        token: response.authResponse.accessToken,
+                                        idToken: '',
                                     };
                                     localStorage.setItem('_login_provider', 'facebook');
                                     observer.next(userDetails);
@@ -66,7 +67,8 @@ var AuthService = (function () {
                                                 uid: res.id,
                                                 provider: "facebook",
                                                 image: res.picture.data.url,
-                                                token: response.authResponse.accessToken
+                                                token: response.authResponse.accessToken,
+                                                idToken: '',
                                             };
                                             localStorage.setItem('_login_provider', 'facebook');
                                             observer.next(userDetails);
@@ -132,8 +134,10 @@ var AuthService = (function () {
         var currentUser = this.gauth.currentUser.get();
         var profile = currentUser.getBasicProfile();
         var idToken = currentUser.getAuthResponse().id_token;
+        var accessToken = currentUser.getAuthResponse().access_token;
         return {
-            token: idToken,
+            token: accessToken,
+            idToken: idToken,
             uid: profile.getId(),
             name: profile.getName(),
             email: profile.getEmail(),
@@ -141,10 +145,10 @@ var AuthService = (function () {
             provider: "google"
         };
     };
+    AuthService = __decorate([
+        Injectable()
+    ], AuthService);
     return AuthService;
 }());
-AuthService = __decorate([
-    Injectable()
-], AuthService);
 export { AuthService };
 //# sourceMappingURL=auth.service.js.map

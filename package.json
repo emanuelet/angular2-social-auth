@@ -1,54 +1,58 @@
 {
-  "name": "angular2-social-login",
-  "version": "3.0.1",
-  "description": "Simple client side social authentication for Angular2 application.",
-  "main": "dist/bundles/angular2-social-login.min.js",
-  "module": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "scripts": {
-    "transpile": "ngc",
-    "package": "rollup -c",
-    "minify": "uglifyjs dist/bundles/angular2-social-login.js --screw-ie8 --compress --mangle --comments --output dist/bundles/angular2-social-login.min.js",
-    "build": "npm run transpile && npm run package && npm run minify"
-  },
-  "peerDependencies": {
-    "@angular/core": "2.x || 4.x",
-    "rxjs": "^5.0.1"
-  },
-  "devDependencies": {
-    "@angular/common": "~2.4.0",
-    "@angular/compiler": "~2.4.0",
-    "@angular/compiler-cli": "~2.4.0",
-    "@angular/platform-browser": "~2.4.0",
-    "@types/core-js": "^0.9.34",
-    "rollup": "^0.41.6",
-    "rxjs": "5.0.1",
-    "typescript": "^2.2.2",
-    "uglify-js": "^2.8.22",
-    "zone.js": "^0.7.4",
-    "@angular/core": "~2.4.0",
-    "@angular/http": "~2.4.0"
-  },
-  "keywords": [
-    "angular2",
-    "angular",
-    "angular 4",
-    "authentication",
-    "social login",
-    "angular4 social login",
-    "angular2 social login"
-  ],
-  "contributors": [
-    {
-      "name": "Srinivas K",
-      "email": "kpsrinivas@heresy.in"
+    "name": "angular2-social-auth",
+    "version": "3.0.2",
+    "description": "Simple client side social authentication with providers for Google, Facebook and Linkedin for Angular2 application.",
+    "main": "dist/bundles/angular2-social-login.min.js",
+    "module": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "scripts": {
+        "transpile": "ngc",
+        "package": "rollup -c",
+        "minify": "uglifyjs dist/bundles/angular2-social-login.js --screw-ie8 --compress --mangle --comments --output dist/bundles/angular2-social-login.min.js",
+        "build": "npm run transpile && npm run package && npm run minify"
     },
-    {
-      "name": "Jayaram Kurapati",
-      "url": "https://www.jayaramk.in",
-      "email": "reachme@jayaramk.in"
-    }
-  ],
-  "author": "Heresy Infotech Private Limited",
-  "license": "ISC"
+    "peerDependencies": {
+        "@angular/core": "2.x || 4.x",
+        "rxjs": "^5.0.1"
+    },
+    "devDependencies": {
+        "@angular/common": "~2.4.0",
+        "@angular/compiler": "~2.4.0",
+        "@angular/compiler-cli": "~2.4.0",
+        "@angular/platform-browser": "~2.4.0",
+        "@types/core-js": "^0.9.34",
+        "rollup": "^0.41.6",
+        "rxjs": "5.0.1",
+        "typescript": "^2.2.2",
+        "uglify-js": "^2.8.22",
+        "zone.js": "^0.7.4",
+        "@angular/core": "~2.4.0",
+        "@angular/http": "~2.4.0"
+    },
+    "keywords": [
+        "angular2",
+        "angular",
+        "angular 4",
+        "authentication",
+        "social login",
+        "angular4 social login",
+        "angular2 social login"
+    ],
+    "contributors": [{
+            "name": "Srinivas K",
+            "email": "kpsrinivas@heresy.in"
+        },
+        {
+            "name": "Jayaram Kurapati",
+            "url": "https://www.jayaramk.in",
+            "email": "reachme@jayaramk.in"
+        },
+        {
+            "name": "Manoel Motoso",
+            "url": "",
+            "email": "manoel.s.motoso@gmail.com"
+        }
+    ],
+    "author": "Heresy Infotech Private Limited",
+    "license": "ISC"
 }

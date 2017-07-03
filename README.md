@@ -1,7 +1,10 @@
 # angular2-social-login
 Simple client side social authentication for Angular2 application based on our previous angular1's angularjs-social-login plugin.
+<br>
+this module is a fork of: https://github.com/heresy/angular2-social-login.git
 
-Supported sites:
+
+# Supported sites:
 - Google
 - Facebook
 - LinkedIN
@@ -12,12 +15,12 @@ Supported sites:
 #### via npm
 
 ```shell
-npm install angular2-social-login --save
+npm install angular2-social-auth --save
 ```
 ### Adding angular2-social-login to your project
-Add `map` for **`angular2-social-login`** in your `systemjs.config`
+Add `map` for **`angular2-social-auth`** in your `systemjs.config`
 ```javascript
-'angular2-social-login': 'node_modules/angular2-social-login/dist/bundles/angular2-social-login.min.js'
+'angular2-social-auth': 'node_modules/angular2-social-auth/dist/bundles/angular2-social-login.min.js'
 ```
 ### Main module configuration
 ```javascript
@@ -71,7 +74,7 @@ export class AppComponent implements OnDestroy {
       (data) => {
                   console.log(data);
                   //user data
-                  //name, image, uid, provider, uid, email, token (returns tokenId for google, accessToken for Facebook, no token for linkedIn)
+                  //name, image, uid, provider, uid, email, token (returns  accessToken for Facebook,Google no token for linkedIn)
                 }
     )
   }
@@ -86,4 +89,3 @@ export class AppComponent implements OnDestroy {
 
 }
 ```
-For example please visit https://github.com/heresy/angular2-social-login-example
