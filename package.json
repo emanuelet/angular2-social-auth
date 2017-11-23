@@ -1,6 +1,6 @@
 {
     "name": "angular2-social-auth",
-    "version": "3.0.3",
+    "version": "3.0.5",
     "description": "Simple client side social authentication with providers for Google, Facebook and Linkedin for Angular2 application.",
     "main": "dist/bundles/angular2-social-login.min.js",
     "module": "dist/index.js",
@@ -12,33 +12,34 @@
         "build": "npm run transpile && npm run package && npm run minify"
     },
     "peerDependencies": {
-        "@angular/core": "2.x || 4.x",
-        "rxjs": "^5.4.1"
+        "@angular/core": "4.x || 5.x",
+        "rxjs": "^5.5.2"
     },
     "devDependencies": {
-        "@angular/common": "^4.2.5",
-        "@angular/compiler": "^4.2.5",
-        "@angular/compiler-cli": "^4.2.5",
-        "@angular/core": "^4.2.5",
-        "@angular/http": "^4.2.5",
-        "@angular/platform-browser": "^4.2.5",
-        "@types/core-js": "^0.9.42",
-        "rollup": "^0.43.0",
-        "rxjs": "^5.4.1",
-        "typescript": "^2.4.1",
-        "uglify-js": "^3.0.23",
-        "zone.js": "^0.8.12"
+        "@angular/common": "^5.0.3",
+        "@angular/compiler": "^5.0.3",
+        "@angular/compiler-cli": "^5.0.3",
+        "@angular/core": "^5.0.3",
+        "@angular/http": "^5.0.3",
+        "@angular/platform-browser": "^5.0.3",
+        "@types/core-js": "^0.9.43",
+        "rollup": "^0.51.8",
+        "rxjs": "^5.5.2",
+        "typescript": "^2.6.1",
+        "uglify-js": "^3.1.10",
+        "zone.js": "^0.8.18"
     },
     "keywords": [
         "angular2",
         "angular",
-        "angular 4",
+        "angular 5",
         "authentication",
         "social auth",
         "angular4 social auth",
         "angular2 social auth"
     ],
-    "contributors": [{
+    "contributors": [
+        {
             "name": "Srinivas K",
             "email": "kpsrinivas@heresy.in"
         },
