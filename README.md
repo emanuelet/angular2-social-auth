@@ -43,14 +43,14 @@ let providers = {
   };
 
 @NgModule({
-  imports: [ 
-              BrowserModule,
-              Angular2SocialLoginModule
-          ],
+  imports: [
+      BrowserModule,
+      Angular2SocialLoginModule
+  ],
   declarations: [AppComponent],
   bootstrap: [ AppComponent ]
 })
-export class AppModule { 
+export class AppModule {
   constructor(){}
 }
 
@@ -68,20 +68,22 @@ import { AuthService } from "angular2-social-auth";
 export class AppComponent implements OnDestroy {
   ...
   constructor(public _auth: AuthService){ }
-  
+
   signIn(provider){
-    this.sub = this._auth.login(provider).subscribe(
+    this._auth.login(provider).subscribe(
       (data) => {
                   console.log(data);
                   //user data
-                  //name, image, uid, provider, uid, email, token (returns  accessToken for Facebook,Google no token for linkedIn)
+                  //first_name, last_name, image, uid, provider, email, token (returns  accessToken for Facebook and Google no token for linkedIn)
                 }
     )
   }
 
   logout(){
     this._auth.logout().subscribe(
-      (data)=>{//return a boolean value.}
+      (data)=>{
+        //return a boolean value.
+      }
     )
   }
 
