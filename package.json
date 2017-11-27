@@ -6,26 +6,27 @@
     "module": "dist/index.js",
     "typings": "dist/index.d.ts",
     "scripts": {
-        "transpile": "ngc",
+        "transpile": "ngc -p tsconfig-aot.json",
         "package": "rollup -c",
         "minify": "uglifyjs dist/bundles/angular2-social-login.js --screw-ie8 --compress --mangle --comments --output dist/bundles/angular2-social-login.min.js",
         "build": "npm run transpile && npm run package && npm run minify"
     },
     "peerDependencies": {
         "@angular/core": "4.x || 5.x",
+        "@angular/common": "4.x || 5.x",
         "rxjs": "^5.5.2"
     },
     "devDependencies": {
-        "@angular/common": "^5.0.3",
-        "@angular/compiler": "^5.0.3",
-        "@angular/compiler-cli": "^5.0.3",
-        "@angular/core": "^5.0.3",
-        "@angular/http": "^5.0.3",
-        "@angular/platform-browser": "^5.0.3",
+        "@angular/compiler": "4.x || 5.x",
+        "@angular/compiler-cli": "4.x || 5.x",
+        "@angular/core": "4.x || 5.x",
+        "@angular/common": "4.x || 5.x",
+        "@angular/http": "4.x || 5.x",
+        "@angular/platform-browser": "4.x || 5.x",
         "@types/core-js": "^0.9.43",
         "rollup": "^0.51.8",
         "rxjs": "^5.5.2",
-        "typescript": "^2.6.1",
+        "typescript": "2.4.2",
         "uglify-js": "^3.1.10",
         "zone.js": "^0.8.18"
     },
