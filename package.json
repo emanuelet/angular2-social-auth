@@ -1,6 +1,6 @@
 {
     "name": "angular2-social-auth",
-    "version": "3.0.6",
+    "version": "3.0.7",
     "description": "Simple client side social authentication with providers for Google, Facebook and Linkedin for Angular4/5 application.",
     "main": "dist/bundles/angular2-social-login.min.js",
     "module": "dist/index.js",
