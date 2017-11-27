@@ -14,7 +14,7 @@
     "target": "es5",
     "skipLibCheck": true,
     "lib": [
-      "es2015", 
+      "es2015",
       "dom"
     ]
   },
@@ -22,6 +22,7 @@
     "src/index.ts"
   ],
   "angularCompilerOptions": {
+    "genDir": "dist",
     "strictMetadataEmit": true
   }
 }
