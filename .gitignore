@@ -2,6 +2,4 @@
 /typings
 npm-debug.log
 .vscode
-*.metadata.json
-*.map.js
 /src/**/*.js
