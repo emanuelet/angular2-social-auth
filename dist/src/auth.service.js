@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/Observable";
-import { Observer } from "rxjs/Observer";
-var AuthService = /** @class */ (function () {
+var AuthService = (function () {
     function AuthService() {
     }
     AuthService.prototype.login = function (provider) {
@@ -150,6 +149,11 @@ var AuthService = /** @class */ (function () {
             provider: "google"
         };
     };
+    AuthService.decorators = [
+        { type: Injectable },
+    ];
+    /** @nocollapse */
+    AuthService.ctorParameters = function () { return []; };
     return AuthService;
 }());
 export { AuthService };

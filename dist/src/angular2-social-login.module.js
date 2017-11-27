@@ -1,6 +1,6 @@
-import { NgModule, ModuleWithProviders } from "@angular/core";
-import { AuthService, IProviders, IProvider } from "./auth.service";
-var Angular2SocialLoginModule = /** @class */ (function () {
+import { NgModule } from "@angular/core";
+import { AuthService } from "./auth.service";
+var Angular2SocialLoginModule = (function () {
     function Angular2SocialLoginModule() {
     }
     Angular2SocialLoginModule.loadProvidersScripts = function (config) {
@@ -50,6 +50,13 @@ var Angular2SocialLoginModule = /** @class */ (function () {
             loadProvidersScripts[provider](config[provider]);
         });
     };
+    Angular2SocialLoginModule.decorators = [
+        { type: NgModule, args: [{
+                    providers: [AuthService]
+                },] },
+    ];
+    /** @nocollapse */
+    Angular2SocialLoginModule.ctorParameters = function () { return []; };
     return Angular2SocialLoginModule;
 }());
 export { Angular2SocialLoginModule };
